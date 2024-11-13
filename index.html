@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Shop.It</title>
+</head>
+<body>
+    <header>
+        <div class="logo">shop it</div>
+        <div class="burger-menu" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="products">
+            <div class="card">
+                <h3>samsung s20 ultra</h3>
+                <img src="https://m.media-amazon.com/images/I/51e8eGM9imL._AC_SL1000_.jpg" alt="">
+                <button>Купить</button>
+            </div>
+            <div class="card">
+                <h3>Iphone 16 pro max</h3>
+                <img src="https://www.bell.ca/Styles/wireless/iphone_16_pro_max/iPhone_16_Pro_Max_Desert_Titanium_lrg3.png">
+                <button>Купить!</button>
+            </div>
+            <div class="card">
+                <h3>Xiomi 14 ultra</h3>
+                <img src="https://cdn.dxomark.com/wp-content/uploads/medias/post-171171/bdc0df40e7c3983b73802b3d47dd20c4600x60085.jpg">
+                <button>Купить</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        const bmenu =document.getElementById("burger-menu")
+        const nmenu = document.getElementById("nav-menu")
+        bmenu.addEventListener("click", () => {
+            nmenu.classList.toggle("show");
+        })
+    </script>
+</body>
+</html>
